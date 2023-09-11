@@ -789,9 +789,15 @@ footer {
   .hero-section {
     flex-direction: column;
     padding: 0;
+    margin: 2rem 0;
   }
+
   .hero-section-left {
-    width: 90%;
+    width: 96%;
+  }
+  .hero-section-description{
+    width: 100%;
+    margin-top: 1rem;
   }
   .hero-section-right {
     width: 80%;
