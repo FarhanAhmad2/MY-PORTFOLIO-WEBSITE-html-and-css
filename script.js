@@ -36,7 +36,7 @@ overlay.addEventListener("click", () => {
 });
 
 // function to remove overlay when click on hyperlinks in navbar
-const navHyperlink = document.querySelectorAll(".nav-hyperlink");
+const navHyperlink = document.querySelectorAll(".nav-hyperlink a");
 navHyperlink.forEach((link) => {
   link.addEventListener("click", () => {
     console.log("link clicked");

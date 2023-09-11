@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing:border-box; */
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
 }
@@ -19,25 +18,22 @@
 }
 
 .container {
-  /* width:1200px;  */
   width: 83%;
   margin: 0 auto;
 }
 
+/* NAVBAR */
 .navbar {
-  /* background-color: green; */
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 1rem; */
   width: 100%;
   border-bottom: 1px solid rgb(172, 164, 164);
 }
 
 .logo {
-  /* width:80px; */
-  margin-right: 3px;
+  margin-right: 0px;
   width: 5rem;
 }
 
@@ -77,6 +73,8 @@ a {
   transition: 0.8s;
   font-weight: bold;
 }
+
+/* HAMBURGER AND MENU SLIDER FOR MOBILE DEVICE */
 .hamburger {
   display: none;
   position: absolute;
@@ -129,12 +127,13 @@ a {
 .hamburger i {
   font-size: 1.8rem;
 }
+
+/* HERO SECTION */
 .hero-section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #4e45d5; */
   gap: 5rem;
   margin: 4rem auto;
   padding: 0 1rem;
@@ -161,7 +160,7 @@ a {
 }
 
 .hero-section-heading {
-  font-size: 35px;
+  font-size: 2.18rem;
   color: #343d68;
   font-weight: 500;
 }
@@ -225,6 +224,16 @@ a {
   width: 40%;
 }
 
+.resume-section {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+.resume-section span a .resume {
+  display: inline-block;
+  padding: 0.8rem 1.3rem;
+}
+
 .absolute {
   position: absolute;
 }
@@ -237,6 +246,7 @@ a {
   filter: grayscale(1);
   transition: all 1s;
   animation: scaleImage 5s linear infinite;
+  margin-left: 0;
 }
 
 .user-image img {
@@ -349,6 +359,7 @@ a {
   }
 }
 
+/* PROJECT SECTION */
 .project-section {
   background-color: rgb(231, 231, 231);
   margin-top: 4rem;
@@ -374,7 +385,6 @@ a {
   height: 550px;
   background-image: url(./images/projects/Project1.png);
   background-size: cover;
-  /* background-repeat: no-repeat; */
   position: relative;
   box-shadow: 0px 0px 40px #1f1f1f;
 }
@@ -388,7 +398,6 @@ a {
   bottom: 0;
   background-color: #1f1f1f9a;
   z-index: 0;
-  /* transform: scaleX(1); */
 }
 
 .project-card::before {
@@ -415,12 +424,10 @@ a {
   font-weight: 600;
   color: white;
   z-index: 10;
-  /* display:none; */
   opacity: 0;
 }
 
 .project-card:hover .project-number {
-  /* display:block; */
   opacity: 1;
 }
 
@@ -518,66 +525,8 @@ a {
   background-image: url(./images/projects/Project4.png);
 }
 
-/* media query for laptops */
-@media (max-width: 1300px) {
-  .page-header {
-    padding-top: 30px;
-    color: var(--bgOrange);
-    text-align: center;
-    font-size: 40px;
-  }
-  .project-container {
-    padding: 5px;
-    margin: 10px;
-    gap: 60px;
-  }
-  .project-card {
-    width: 100%;
-    height: 300px;
-  }
-  .project-card {
-    background-size: cover;
-    background-position: center;
-  }
-  .project-content {
-    scale: 0.5;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-  .project-content-left {
-    left: 0;
-  }
-  .project-heading {
-    font-size: 40px;
-    width: 100%;
-  }
-  .project-sub-heading {
-    width: 100%;
-  }
-  #project2 {
-    margin-left: 0;
-  }
-  #project4 {
-    margin-left: 0;
-  }
-  .project-skill-container {
-    width: 100%;
-  }
-  .project-skill {
-    width: 35px;
-  }
-  .project-card:hover .project-number {
-    display: none;
-  }
-  .project-card:hover .project-content {
-    scale: 0.55;
-  }
-}
-
+/* SKILLS CONTAINER */
 .skills-container {
-  /* background-color: red; */
   position: relative;
   display: flex;
   padding: 5rem;
@@ -621,91 +570,6 @@ a {
   animation: blobAnimate 3s linear infinite;
 }
 
-/* media query for mobile device */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-  .navbar {
-    /* background-color: red; */
-  }
-  .nav-items {
-    display: none;
-  }
-  .hamburger {
-    display: inline-flex;
-  }
-  .hero-section {
-    /* background-color: yellowgreen; */
-    flex-direction: column-reverse;
-  }
-  .hero-section-left {
-    width: 90%;
-  }
-  .hero-section-right {
-    width: 85%;
-  }
-  .faded-text {
-    bottom: -7%;
-    left: 1%;
-    font-size: 5em;
-  }
-  .skills-container {
-    /* background-color: aqua; */
-    flex-direction: column;
-    width: 100%;
-    padding: 2rem;
-    margin: 5rem auto;
-  }
-  .skill-container-left {
-    width: 90%;
-    /* background-color: yellow; */
-  }
-  .skill-container-right {
-    width: 90%;
-    /* background-color: red; */
-    gap: 3rem;
-  }
-  .skill-fade-text {
-    font-size: 8em;
-    bottom: -100px;
-    right: -1%;
-  }
-  .contactus-form-container .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    padding: 1rem;
-  }
-
-  .contactus-form {
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -80px;
-    width: 100%;
-  }
-  .form {
-    /* background-color: aqua; */
-    justify-content: center;
-    align-items: center;
-  }
-  #submit-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-  }
-
-  .footer-wrapper {
-    flex-direction: column;
-  }
-}
-
 @keyframes blobAnimate {
   50% {
     top: 54%;
@@ -743,6 +607,7 @@ a {
   margin: 15px 0;
 }
 
+/* CONTACT US CONTAINER */
 .contactus-form-container {
   width: 100%;
   background-color: rgb(231, 231, 231);
@@ -808,6 +673,7 @@ a {
   font-size: 1.5rem;
 }
 
+/* FOOTER */
 footer {
   position: relative;
   margin-top: -1px;
@@ -883,7 +749,7 @@ footer {
   font-size: 0.7rem;
 }
 
-/* styling scrollbar and thumbs */
+/* STYLING SCROLLBAR AND THUMB */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -903,4 +769,150 @@ footer {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* LETS MAKE IT RESPONSIVE */
+/* MEDIA QUERY FOR MOBILE AND TAB  */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .navbar {
+    /* background-color: red; */
+  }
+  .nav-items {
+    display: none;
+  }
+  .hamburger {
+    display: inline-flex;
+  }
+  .hero-section {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-section-left {
+    width: 90%;
+  }
+  .hero-section-right {
+    width: 80%;
+  }
+  .user-image {
+    margin-left: -0.3rem;
+  }
+  .faded-text {
+    bottom: -79px;
+    left: 1%;
+    font-size: 3em;
+  }
+  .hero-section-heading {
+    font-size: 1.8rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    margin: 5rem auto;
+  }
+  .skill-container-left {
+    width: 90%;
+  }
+  .skill-container-right {
+    width: 90%;
+    gap: 3rem;
+  }
+  .skill-fade-text {
+    font-size: 8em;
+    bottom: -100px;
+    right: -1%;
+  }
+
+  .contactus-form-container .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .contactus-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+    width: 100%;
+  }
+  .form {
+    justify-content: center;
+    align-items: center;
+  }
+  #submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* MEDIA QUERY FOR LAPTOP*/
+@media (max-width: 1300px) {
+  .page-header {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+  .project-container {
+    padding: 5px;
+    margin: 10px;
+    gap: 60px;
+  }
+  .project-card {
+    width: 100%;
+    height: 300px;
+  }
+  .project-card {
+    background-size: cover;
+    background-position: center;
+  }
+  .project-content {
+    scale: 0.5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .project-content-left {
+    left: 0;
+  }
+  .project-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+  .project-sub-heading {
+    width: 100%;
+  }
+  #project2 {
+    margin-left: 0;
+  }
+  #project4 {
+    margin-left: 0;
+  }
+  .project-skill-container {
+    width: 100%;
+  }
+  .project-skill {
+    width: 35px;
+  }
+  .project-card:hover .project-number {
+    display: none;
+  }
+  .project-card:hover .project-content {
+    scale: 0.55;
+  }
 }
