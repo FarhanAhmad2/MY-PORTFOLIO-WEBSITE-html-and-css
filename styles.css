@@ -780,6 +780,9 @@ footer {
   .navbar {
     /* background-color: red; */
   }
+  .logo-container{
+    margin-left: -1.8rem;
+  }
   .nav-items {
     display: none;
   }
@@ -789,13 +792,14 @@ footer {
   .hero-section {
     flex-direction: column;
     padding: 0;
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 
   .hero-section-left {
     width: 96%;
   }
-  .hero-section-description{
+  .hero-section-description {
     width: 100%;
     margin-top: 1rem;
   }
@@ -803,10 +807,10 @@ footer {
     width: 80%;
   }
   .user-image {
-    margin-left: -0.3rem;
+    margin-left: -0.7rem;
   }
   .faded-text {
-    bottom: -79px;
+    bottom: -108px;
     left: 1%;
     font-size: 3em;
   }
@@ -821,11 +825,21 @@ footer {
     margin: 5rem auto;
   }
   .skill-container-left {
-    width: 90%;
+    width: 100%;
+  }
+  .skill-heading {
+    font-size: 2rem;
+  }
+  .caps {
+    font-size: 4rem;
   }
   .skill-container-right {
     width: 90%;
-    gap: 3rem;
+    gap: 2rem;
+    margin-left: -20px;
+  }
+  .skills-logo {
+    width: 3rem;
   }
   .skill-fade-text {
     font-size: 8em;
@@ -837,16 +851,20 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 1rem;
   }
 
+  .contactus-heading{
+    font-size: 3rem;
+  }
+  .contactus-sub-heading{
+    font-size: 2rem;
+  }
   .contactus-form {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: -80px;
+    margin-left: -3.6rem;
     width: 100%;
   }
   .form {
