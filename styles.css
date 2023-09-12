@@ -762,13 +762,13 @@ footer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--bgOrange);
+  background: rgb(80, 76, 76);
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red;
+  background: rgb(40, 38, 38);
 }
 
 /* LETS MAKE IT RESPONSIVE */
@@ -780,7 +780,7 @@ footer {
   .navbar {
     /* background-color: red; */
   }
-  .logo-container{
+  .logo-container {
     margin-left: -1.8rem;
   }
   .nav-items {
@@ -846,7 +846,7 @@ footer {
     bottom: -120px;
     right: -1%;
   }
-  .blob-style{
+  .blob-style {
     width: 15rem;
   }
 
@@ -857,11 +857,11 @@ footer {
     padding: 1rem;
   }
 
-  .contactus-heading{
+  .contactus-heading {
     font-size: 2.5rem;
     margin-top: -10px;
   }
-  .contactus-sub-heading{
+  .contactus-sub-heading {
     font-size: 1.5rem;
     margin-top: 15px;
   }
@@ -870,15 +870,16 @@ footer {
     margin-left: -4.7rem;
     margin-top: -30px;
   }
- 
+
   #submit-button {
-    display:flex;
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 0.8rem;
+    border-radius: 5px;
   }
-  #submit-btn{
-    font-size:1.2rem;
+  #submit-btn {
+    font-size: 1.2rem;
   }
 
   .footer-wrapper {
