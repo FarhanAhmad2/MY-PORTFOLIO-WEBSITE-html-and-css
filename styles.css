@@ -822,7 +822,7 @@ footer {
     flex-direction: column;
     width: 100%;
     padding: 2rem;
-    margin: 5rem auto;
+    margin: 2rem auto 5rem auto;
   }
   .skill-container-left {
     width: 100%;
@@ -884,6 +884,7 @@ footer {
 
   .footer-wrapper {
     flex-direction: column;
+    margin-top: -60px;
   }
 }
 
