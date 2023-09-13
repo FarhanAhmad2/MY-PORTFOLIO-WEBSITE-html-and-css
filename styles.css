@@ -387,6 +387,8 @@ a {
   background-size: cover;
   position: relative;
   box-shadow: 0px 0px 40px #1f1f1f;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .project-card::after {
@@ -816,6 +818,16 @@ footer {
   }
   .hero-section-heading {
     font-size: 1.8rem;
+  }
+
+  .project-content {
+    margin-top: -40px;
+    margin-left: -20px;
+    width: 100%;
+    background-color: aqua;
+  }
+  .project-skills-container {
+    width: 100%;
   }
 
   .skills-container {
